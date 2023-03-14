@@ -32,7 +32,13 @@ html {
     width: 80vw;
     max-width: 960px;
     margin: 40px auto;
-  }
+}
+
+/*  --------------- Responsive Images -----------------  */
+
+img {
+    max-width: 100%;
+}
 
 /*  --------------- Global Styles -----------------  */
 
@@ -91,12 +97,42 @@ header.primary nav ul li a {
 
 header.primary nav ul li a:hover,
 header.primary nav ul li a:active {
-  background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
 
+#intro{
 
+}
 
+#intro h2{
+    color: #13678A;
+    border-bottom: 2px dotted #c0c0c0;
+}
 
+#content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 2px dotted #c0c0c0;
+    padding-bottom:2.6rem;
+}
+
+#content article.post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: 0.4s;
+}
+  
+  #content article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+article.post figure {
+    margin: 0;
+}
 
 
 
