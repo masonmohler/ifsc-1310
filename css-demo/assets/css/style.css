@@ -42,12 +42,12 @@ img {
 
 /*  --------------- Global Styles -----------------  */
 
-body{
+body {
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
 
-header.primary{
+header.primary {
     background-color: #13678A;
     text-align: center;
     color: #fff;
@@ -55,7 +55,7 @@ header.primary{
     text-shadow: 1px 1px 5px #000;
 }
 
-header.primary h1{
+header.primary h1 {
     font-size: 2.5rem;
     margin: 20px 0 10px;
 }
@@ -100,11 +100,12 @@ header.primary nav ul li a:active {
     background: rgba(0, 0, 0, 0.8);
 }
 
-#intro{
-
+#intro {
+    border-bottom: 2px dotted #c0c0c0;
+    padding-bottom: 14px;
 }
 
-#intro h2{
+#intro h2 {
     color: #13678A;
     border-bottom: 2px dotted #c0c0c0;
 }
@@ -134,8 +135,66 @@ article.post figure {
     margin: 0;
 }
 
+time.post-date,
+figcaption,
+.post-meta {
+    text-transform: uppercase;
+    color: #c0c0c0;
+}
 
+.post figure img {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 2px;
+}
 
+article.post a {
+    color: #13678A;
+}
+
+article.post a:hover {
+    text-decoration: none;
+}
+
+aside[role="complementary"] {
+    background-color: #13678A;
+    color: #fff;
+    padding: 1.9rem;
+    text-shadow: 1px 1px 5px #000;
+}
+
+aside .container {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+
+aside .widget a:last-of-type {
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    color: #fff;
+}
+
+aside .widget a:hover {
+    text-decoration: none;
+}
+
+aside .widget footer {
+    display: none;
+}
+
+#colophon {
+    background-color: #012030;
+}
+  
+#colophon h6 {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
 
 
 /*  --------------- Media Queries -----------------  */
