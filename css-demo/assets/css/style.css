@@ -1,10 +1,10 @@
 /*
     Color Scheme:
-    - #012030
-    - #13678A
-    - #45C4B0
-    - #9AEBA3
-    - #DAFDBA
+    - #0D2127
+    - #0F3E39
+    - #265B40
+    - #5CA36F
+    - #C0DE88
 
     Fonts:
     - Tilt Warp Regular 400 (For titles and headings)
@@ -68,7 +68,7 @@ img {
 
 table {
     width: 100%;
-    border: 1px solid #c0c0c0;
+    border: 5px solid #265B40;
     border-collapse: collapse;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     margin: 20px 0;
@@ -76,25 +76,37 @@ table {
 
 table caption {
     font-weight: bold;
-    margin: 20px;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
+    font-size: x-large;
+    margin: 10px;
+    color: #265B40;
+}
+
+table tr {
+    background-color: rgba(192, 222, 136, 0.3);
+    transition: 0.4s;
 }
 
 table tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(92, 163, 111, 0.3);
 }
 
 table tr:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    font-size: xx-large;
 }
 
 table th {
-    background-color: #13678A;
+    background-color: #265B40;
     color: #fff;
     padding: 10px;
+    text-shadow: 1px 1px 5px #000;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
 }
 
 table td {
-    border: 1px solid #c0c0c0;
+    border: 1px solid #265B40;
     padding: 5px;
     text-align: right;
     width: 33%;
@@ -146,7 +158,7 @@ body {
 }
 
 header.primary {
-    background-color: #13678A;
+    background-color: #0F3E39;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23c0c0c0' fill-opacity='0.2' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     text-align: center;
     color: #fff;
@@ -157,6 +169,8 @@ header.primary {
 header.primary h1 {
     font-size: 2.5rem;
     margin: 20px 0 10px;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
 }
 
 header.primary h1 a {
@@ -166,11 +180,15 @@ header.primary h1 a {
 
 header.primary h2 {
     font-size: 1.4rem;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
 }
 
 header.primary nav {
     max-width: 960px;
     margin: 20px auto;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
 }
 
 header.primary nav ul {
@@ -187,16 +205,17 @@ header.primary nav ul li {
 header.primary nav ul li a {
     color: #fff;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     padding: 8px 16px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 4px solid rgba(255, 255, 255, 0.7);
     transition: 0.4s;
 }
 
 header.primary nav ul li a:hover,
 header.primary nav ul li a:active {
-    background: rgba(0, 0, 0, 0.8);
+    border: 10px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 4px 8px rgba(0, 0, 0, 5);
 }
 
 #intro {
@@ -205,7 +224,9 @@ header.primary nav ul li a:active {
 }
 
 #intro h2 {
-    color: #13678A;
+    color: #265B40;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
     border-bottom: 2px dotted #c0c0c0;
 }
 
@@ -248,7 +269,9 @@ figcaption,
 }
 
 article.post a {
-    color: #13678A;
+    color: #265B40;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
 }
 
 article.post a:hover {
@@ -256,8 +279,22 @@ article.post a:hover {
 }
 
 #practice h2 {
-    color: #13678A;
+    color: #265B40;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
     border-bottom: 2px dotted #c0c0c0;
+}
+
+#practice h3 {
+    color: #265B40;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
+}
+
+#practice h4 {
+    color: #265B40;
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 300;
 }
 
 #practice blockquote {
@@ -265,11 +302,19 @@ article.post a:hover {
     margin: 40px 80px;
     padding: 20px 40px;
     border-radius: 30px 0;
-    background-color: #13678A;
+    background-color: #265B40;
     color: #fff;
     line-height: 1.8;
     text-shadow: 1px 1px 5px #000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+}
+
+#practice blockquote:hover {
+    font-size: x-large;
+    padding: 30px 50px;
+    border-radius: 30px;
+    box-shadow: 8px 16px rgba(0, 0, 0, 0.7);
 }
   
 #practice blockquote cite {
@@ -280,9 +325,8 @@ article.post a:hover {
     margin-top: 10px;
 }
 
-
 aside[role="complementary"] {
-    background-color: #13678A;
+    background-color: #265B40;
     color: #fff;
     padding: 1.9rem;
     text-shadow: 1px 1px 5px #000;
@@ -310,7 +354,7 @@ aside .widget footer {
 }
 
 #colophon {
-    background-color: #012030;
+    background-color: #0F3E39;
 }
   
 #colophon h6 {
