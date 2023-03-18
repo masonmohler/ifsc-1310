@@ -34,10 +34,108 @@ html {
     margin: 40px auto;
 }
 
+.img-right {
+    float: right;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 10px 0 10px 20px;
+}
+
+.img-left {
+    float: left;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 10px 20px 10px 0;
+}
+
+.img-center {
+    display: block;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 2px;
+    margin: 20px auto;
+}
+
 /*  --------------- Responsive Images -----------------  */
 
 img {
     max-width: 100%;
+}
+
+/*  --------------- Tables -----------------  */
+
+table {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+}
+
+table caption {
+    font-weight: bold;
+    margin: 20px;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+table tr:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+table th {
+    background-color: #13678A;
+    color: #fff;
+    padding: 10px;
+}
+
+table td {
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+    text-align: right;
+    width: 33%;
+}
+
+td:nth-child(1) {
+    text-align: left;
+}
+
+/*  --------------- Lists -----------------  */
+
+ol {
+    list-style-type: lower-roman;
+}
+
+/*
+li {
+    this would target all list items
+}
+*/
+
+ul li > ul {
+    list-style-type:square;
+}
+
+/*
+dl {
+    this would target the entire list
+}
+*/
+
+dt {
+    font-weight:bold;
+}
+
+dd {
+    margin:0;
+}
+  
+dd + dt{
+    margin-top:20px;
 }
 
 /*  --------------- Global Styles -----------------  */
@@ -49,6 +147,7 @@ body {
 
 header.primary {
     background-color: #13678A;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23c0c0c0' fill-opacity='0.2' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     text-align: center;
     color: #fff;
     padding: 20px 40px;
@@ -127,7 +226,7 @@ header.primary nav ul li a:active {
     transition: 0.4s;
 }
   
-  #content article.post:hover {
+#content article.post:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
@@ -155,6 +254,32 @@ article.post a {
 article.post a:hover {
     text-decoration: none;
 }
+
+#practice h2 {
+    color: #13678A;
+    border-bottom: 2px dotted #c0c0c0;
+}
+
+#practice blockquote {
+    border: 4px double #fff;
+    margin: 40px 80px;
+    padding: 20px 40px;
+    border-radius: 30px 0;
+    background-color: #13678A;
+    color: #fff;
+    line-height: 1.8;
+    text-shadow: 1px 1px 5px #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+  
+#practice blockquote cite {
+    display: block;
+    font-size: .7rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+
 
 aside[role="complementary"] {
     background-color: #13678A;
