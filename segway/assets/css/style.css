@@ -219,6 +219,51 @@ header.primary ul li a:active {
     list-style-type: square;
 }
 
+table {
+    width: 100%;
+    border: 5px solid #fff;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+    font-family: 'Bruno Ace', cursive;
+    text-shadow: 1px 1px 5px #000;
+}
+
+table caption {
+    font-weight: bold;
+    font-weight: 300;
+    font-size: x-large;
+    margin: 10px;
+}
+
+table tr {
+    background-color: rgb(136, 187, 214, 0.3);
+    transition: all 0.4s ease-in-out;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(11, 60, 93, 0.3);
+}
+
+table tr:hover {
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    font-size: large;
+}
+
+table th {
+    color: #fff;
+    padding: 10px;
+    font-weight: 300;
+    text-align: left;
+}
+
+table td {
+    padding: 5px;
+    text-align: right;
+    width: 33%;
+}
+
 #colophon {
     background-color: #0B3C5D;
     border-top: 1px solid #fff;
