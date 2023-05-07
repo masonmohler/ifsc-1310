@@ -152,18 +152,19 @@ header.primary ul li a:active {
 }
 
 #content h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-family: 'Bruno Ace', cursive;
     font-weight: bold;
     padding-bottom: 20px;
     color: #fff;
     text-shadow: 2px 2px 1px #000;
+    text-align: center;
 }
 
 #content details {
     padding: 1.4rem;
     margin: 1.4rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     background-color: #fff;
     border: 5px solid rgb(136, 187, 214, 0.3);
@@ -184,7 +185,11 @@ header.primary ul li a:active {
 }
 
 #content summary {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+}
+
+#content p {
+    display: flex;
 }
 
 #intro {
@@ -204,10 +209,9 @@ header.primary ul li a:active {
     padding-top: 2.6rem;
 }
 
-
 #facts h3 {
     padding-top: 2.6rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 300;
     font-family: 'Bruno Ace', cursive;
     padding-bottom: 20px;
@@ -217,6 +221,7 @@ header.primary ul li a:active {
 
 #facts ul li {
     list-style-type: square;
+    padding-bottom: 20px;
 }
 
 table {
@@ -264,6 +269,36 @@ table td {
     width: 33%;
 }
 
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+    color: #83BAD7;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color: #fff;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.fade img {
+    border: 5px solid #83BAD7;
+}
+
 #colophon {
     background-color: #0B3C5D;
     border-top: 1px solid #fff;
@@ -291,5 +326,8 @@ table td {
     }
     header.primary nav li {
         margin-bottom: 10px;
+    }
+    #content p {
+        display: block;
     }
 }
