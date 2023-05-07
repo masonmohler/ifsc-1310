@@ -5,14 +5,20 @@ body{
 img{
     max-width: 100%;
     border: 5px solid #fff;
+    box-shadow: 5px 5px 10px #000;
+    transition: 0.4s;
+}
+
+img:hover {
+    box-shadow: 20px 20px 5px #000;
     border-radius: 10px;
 }
 
 .container{
-    margin:40px auto;
-    width:70vw;
+    margin: 40px auto;
+    width: 70vw;
     /* Set Max Content Width */
-    max-width:700px;
+    max-width: 700px;
 }
 
 /* Customize Previous/Next/Dots/Autoplay */
@@ -35,4 +41,8 @@ img{
 .slick-autoplay-toggle-button:focus 
 {
     color:black;
+}
+
+.slick-slide {
+    margin: 0 10px;
 }
